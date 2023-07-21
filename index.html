@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .robot{
+    height: 600px;
+    width: 600px;
+    /* background-color: grey; */
+   
+} 
+.ant{
+    height: 50px;
+    width: 130px;
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(10px);
+}
+.a1{
+    height: 80px;
+    width: 5px;
+    background-color:rgb(20, 236, 20) ;
+    rotate: -20deg;
+    border: 4px solid white;
+    border-radius:50%;
+    transform-origin: bottom;
+    animation: a2 2ms infinite;
+   
+    
+}
+.a2{
+    height: 80px;
+    width: 5px;
+    background-color:rgb(20, 236, 20) ;
+    rotate: 20deg;
+    border: 4px solid white;
+    border-radius:50%;
+    transform-origin: bottom;
+    animation: a1 2ms infinite;
+}
+.face{
+    background-color: rgb(20, 236, 20);
+    height:80px;
+    width: 180px;
+    border-radius: 100px 100px 0 0; 
+    border: 5px solid white;
+    position: relative;
+    animation: f 2s infinite;
+    
+}
+.eye{
+    height:30px;
+    width: 100px;
+    margin: 40px;
+    /* background-color:black; */
+    display: flex;
+    justify-content: space-between;
+
+}
+.e1{
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+
+}
+.e2{
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+
+}
+.body{
+    background-color: rgb(20, 236, 20);
+    height: 150px;
+    width: 180px;
+    /* translate: 0 -3px; */
+    border-radius: 0 0 30px 30px;
+    border: 5px solid white;
+    z-index: -1;
+    overflow: hidden;
+    border-radius: 50px;
+    animation: body 2s infinite;
+
+}
+.hand{
+
+    /* background-color: black; */
+    height: 150px;
+    width: 265px;
+    display: flex;
+    justify-content: space-between;
+    margin: -170px;
+}
+.h1{
+    height: 90px;
+    width: 30px;
+    background-color: rgb(20, 236, 20);
+    border-radius: 20px 20px;
+    border: 5px solid white;
+    transform-origin: top;
+    animation: h1 1s infinite;
+    
+
+}
+.h2{
+    height: 90px;
+    width: 30px;
+    background-color:rgb(20, 236, 20);
+    border-radius: 20px 20px;
+    border: 5px solid white;
+    transform-origin: top;
+    animation: h2 1s infinite;
+    
+}
+.leg{
+    /* background-color: red; */
+    height: 90px;
+    width: 120px;
+    margin: 160px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.l1{
+    background-color: rgb(20, 236, 20);
+    height: 90px;
+    width: 30px;
+    /* border: 5px solid white; */
+    border-radius: 0 0 20px 20px;
+    transform-origin: top;
+    animation: l1 1s infinite;
+    
+    
+}
+.l2{
+    background-color: rgb(20, 236, 20);
+    height: 90px;
+    width: 30px;
+    /* border: 5px solid white; */
+    border-radius: 0 0 20px 20px;
+    transform-origin: top;
+    animation: l2 1s infinite;
+    
+}
+
+
+
+@keyframes body
+{
+    0%{
+     
+        rotate: 0deg;
+       
+    }
+    50%{
+        width: 100px;
+        rotate: 360deg;
+       
+    }
+    
+}
+@keyframes h1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    50%{
+        transform: rotate(90deg);
+    }
+    
+}
+@keyframes h2 {
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    50%{
+        transform: rotate(-90deg);
+    }
+    
+}
+@keyframes l1 
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(30deg);
+    }
+    
+}
+@keyframes l2
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-30deg); 
+    }
+    
+}
+@keyframes f {
+    
+    50%{
+        width:250px;
+    }
+    
+}
+@keyframes a1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(30deg);
+    }
+    
+}
+@keyframes a2 {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-30deg);
+    }
+    
+}
+    </style>
+</head>
+<body>
+    <center>
+    <div class="robot">
+        <div class="ant">
+            <div class="a1"></div>
+            <div class="a2"></div>
+        </div>
+            <div class="face">
+            <div class="eye">
+                <div class="e1"></div>
+                <div class="e2"></div>
+            </div>
+        </div>
+        <div class="body"></div>
+        <div class="hand">
+        <div class="h1"></div>
+        <div class="h2"></div>
+        </div>
+        <div class="leg">
+            <div class="l1"></div>
+            <div class="l2"></div>
+        </div>
+    </div>
+    </center>
+    
+</body>
+</html>
